@@ -499,7 +499,6 @@
     <div class="background"></div>
     
     <div class="container">
-        <!-- Header -->
         <div class="header">
             <div class="logo">
                 <div class="logo-icon">📊</div>
@@ -508,7 +507,6 @@
             <p class="subtitle">AI-Powered Real-Time Teaching Intelligence</p>
         </div>
         
-        <!-- Status Bar -->
         <div class="status-bar" id="statusBar">
             <div class="status-info">
                 <div class="status-dot"></div>
@@ -519,16 +517,18 @@
             </div>
         </div>
         
-        <!-- Analyze Button -->
         <div class="analyze-section">
             <button class="analyze-button" id="analyzeBtn" onclick="startSpeechAnalysis()">
                 🎤 Analyze My Teaching
             </button>
+            <a href="https://lms.iitmandi.ac.in" target="_blank" style="text-decoration: none;">
+                <button class="analyze-button" style="margin-top: 15px; background: #10b981;">
+                    🎓 Go to IIT Mandi LMS
+                </button>
+            </a>
         </div>
         
-        <!-- Dashboard -->
         <div class="dashboard">
-            <!-- Engagement Score - Hero -->
             <div class="card engagement-card">
                 <div class="card-header">
                     <span class="card-icon">📈</span>
@@ -540,7 +540,6 @@
                 </div>
             </div>
             
-            <!-- Student Emotion -->
             <div class="card metric-card">
                 <div class="card-header">
                     <span class="card-icon">😊</span>
@@ -550,7 +549,6 @@
                 <div class="metric-sublabel">Detected mood</div>
             </div>
             
-            <!-- Classroom Audio -->
             <div class="card metric-card">
                 <div class="card-header">
                     <span class="card-icon">🔊</span>
@@ -560,7 +558,6 @@
                 <div class="metric-sublabel">Activity level</div>
             </div>
             
-            <!-- Timestamp -->
             <div class="card timestamp-card">
                 <div class="card-header">
                     <span class="card-icon">🕐</span>
@@ -570,7 +567,6 @@
                 <div class="metric-sublabel">Real-time monitoring</div>
             </div>
             
-            <!-- Teacher Metrics (Hidden initially) -->
             <div class="card teacher-card hidden" id="teacherMetrics">
                 <div class="card-header">
                     <span class="card-icon">🎤</span>
@@ -589,8 +585,21 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card" style="grid-column: span 12;">
+                <div class="card-header">
+                    <span class="card-icon">🤖</span>
+                    <h2 class="card-title">AI Teaching Assistant</h2>
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 10px; align-items: center;">
+                    <input type="text" id="searchInput" placeholder="Ask anything... e.g., 'Explain photosynthesis in simple terms'" style="flex-grow: 1; padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: white; font-size: 16px;">
+                    <button onclick="performSearch()" id="searchBtn" style="padding: 15px 30px; border: none; border-radius: 12px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: 600; cursor: pointer;">Ask</button>
+                </div>
+                <div id="searchResults" style="margin-top: 25px; padding: 25px; background: rgba(0,0,0,0.15); border-radius: 12px; min-height: 100px; line-height: 1.7; color: rgba(255,255,255,0.9); white-space: pre-wrap;">
+                    Ask a question above to get an instant answer.
+                </div>
+            </div>
             
-            <!-- Main Nudge -->
             <div class="card nudge-card" id="mainNudge">
                 <div class="card-header">
                     <span class="card-icon">💡</span>
@@ -601,7 +610,6 @@
                 </div>
             </div>
             
-            <!-- Speech Nudge (Hidden initially) -->
             <div class="card speech-nudge-card hidden" id="speechNudge">
                 <div class="card-header">
                     <span class="card-icon">🎯</span>
@@ -782,6 +790,54 @@
                 btn.innerHTML = '🎤 Analyze My Teaching';
             });
         }
+
+        function performSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const query = searchInput.value;
+            const resultsContainer = document.getElementById('searchResults');
+            const searchBtn = document.getElementById('searchBtn');
+
+            if (!query.trim()) {
+                resultsContainer.textContent = 'Please enter a question first.';
+                return;
+            }
+
+            // Show a loading state
+            searchBtn.disabled = true;
+            searchBtn.textContent = 'Thinking...';
+            resultsContainer.innerHTML = '🧠 Accessing knowledge... Please wait.';
+
+            fetch('/gpt-search', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query: query })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.answer) {
+                    resultsContainer.textContent = data.answer;
+                } else {
+                    resultsContainer.textContent = 'Error: ' + (data.error || 'Could not get an answer.');
+                }
+            })
+            .catch(error => {
+                console.error('Search error:', error);
+                resultsContainer.textContent = 'A network error occurred. Please check the console and try again.';
+            })
+            .finally(() => {
+                // Restore the button
+                searchBtn.disabled = false;
+                searchBtn.textContent = 'Ask';
+            });
+        }
+
+        // Add an event listener to allow searching with the "Enter" key
+        document.getElementById('searchInput').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                performSearch();
+            }
+        });
         
         // Update dashboard every 3 seconds
         setInterval(updateDashboard, 3000);
