@@ -159,9 +159,9 @@ Classroom Silence:
 ### 🌐 Try It Live
 **Dashboard URL**: [http://127.0.0.1:5000](http://127.0.0.1:5000) *(if deployed)*
 
-### 📹 Video Walkthrough
-Watch our 3-minute demo: [Link](https://share.descript.com/view/cexrMJwDgRk) *(video demo included)*
-
+### 📹 Video Walkthrough (Updated one: Do not refer to the link given in the ppt)
+Watch our 6-minute explanatory video: [Link](https://drive.google.com/file/d/15kA2wH04LIAOuZFa_Gms7_bRtr8MzKgS/view?usp=sharing) 
+Watch our 3-minute demonstration video: [Link](https://drive.google.com/file/d/1cyZaAPBLEwlTLAvFY3A1B0THNkW_CxYq/view?usp=sharing) 
 
 ---
 
