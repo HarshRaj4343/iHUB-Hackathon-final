@@ -5,15 +5,13 @@
 
 <div align="center">
 
-![Ed-Vantage Banner](https://via.placeholder.com/1200x300/667eea/ffffff?text=Ed-Vantage+%7C+Revolutionizing+Education+with+AI)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0%2B-green?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange?style=for-the-badge&logo=tensorflow)](https://www.tensorflow.org/)
 [![Groq](https://img.shields.io/badge/Groq-AI-purple?style=for-the-badge)](https://groq.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**🏆 Empowering Teachers with Real-Time AI Insights | Built for [Hackathon Name] 2025**
+**🏆 Empowering Teachers with Real-Time AI Insights | Built for [iHUB Multimodal AI Hackathon] 2025**
 
 [🚀 Live Demo](#-live-demo) • [📹 Video Demo](#-video-walkthrough) • [💡 Features](#-key-features) • [🛠️ Setup](#-installation--setup) • [📊 Architecture](#-system-architecture)
 
@@ -159,10 +157,10 @@ Classroom Silence:
 ## 🎬 Live Demo
 
 ### 🌐 Try It Live
-**Dashboard URL**: [https://ed-vantage-demo.herokuapp.com](https://ed-vantage-demo.herokuapp.com) *(if deployed)*
+**Dashboard URL**: [http://127.0.0.1:5000](http://127.0.0.1:5000) *(if deployed)*
 
 ### 📹 Video Walkthrough
-Watch our 3-minute demo: [YouTube Link](https://youtube.com/demo) *(add your video)*
+Watch our 3-minute demo: [Link](https://share.descript.com/view/cexrMJwDgRk) *(video demo included)*
 
 ### 📸 Screenshots
 
@@ -170,7 +168,7 @@ Watch our 3-minute demo: [YouTube Link](https://youtube.com/demo) *(add your vid
 
 | Main Dashboard | Teacher Analysis | AI Assistant |
 |----------------|------------------|--------------|
-| ![Dashboard](https://via.placeholder.com/350x250/667eea/ffffff?text=Main+Dashboard) | ![Analysis](https://via.placeholder.com/350x250/764ba2/ffffff?text=Speech+Analysis) | ![AI](https://via.placeholder.com/350x250/f093fb/ffffff?text=AI+Assistant) |
+| ![Dashboard](https://postimg.cc/gwhSsZqW) | ![Analysis](https://postimg.cc/dhrrSmXV) | ![AI](https://postimg.cc/DSkbs4ZF) |
 
 </div>
 
@@ -719,25 +717,25 @@ This is already included in the code, but if you still see warnings, they're har
 
 ## 🚀 Future Roadmap
 
-### Phase 1: Enhanced Analytics (Q1 2026)
+### Phase 1: Enhanced Analytics
 - [ ] Historical engagement trends
 - [ ] Individual student tracking (opt-in)
 - [ ] Weekly/monthly reports
 - [ ] Export data to CSV/PDF
 
-### Phase 2: Advanced AI (Q2 2026)
+### Phase 2: Advanced AI
 - [ ] Offline speech recognition
 - [ ] Custom emotion models for diverse populations
 - [ ] Multi-language support (Spanish, French, Mandarin)
 - [ ] Predictive disengagement alerts
 
-### Phase 3: Integration & Scale (Q3 2026)
+### Phase 3: Integration & Scale
 - [ ] LMS integration (Canvas, Blackboard, Moodle)
 - [ ] Mobile app (iOS/Android)
 - [ ] Multi-classroom dashboard
 - [ ] School/district-wide analytics
 
-### Phase 4: Accessibility (Q4 2026)
+### Phase 4: Accessibility
 - [ ] Sign language detection
 - [ ] Accessibility mode for diverse learners
 - [ ] Screen reader compatibility
@@ -749,11 +747,10 @@ This is already included in the code, but if you still see warnings, they're har
 
 <div align="center">
 
-| ![Team Member 1](https://via.placeholder.com/150?text=TM1) | ![Team Member 2](https://via.placeholder.com/150?text=TM2) | ![Team Member 3](https://via.placeholder.com/150?text=TM3) |
+| ![Harsh Raj] | ![Sushant Garg]| ![Saurabh Singh] | ![Kritin Challa] | ![Arpit Aggarwal] |
 |:---:|:---:|:---:|
-| **[Your Name]** | **[Teammate 2]** | **[Teammate 3]** |
-| Project Lead & Backend | AI/ML Engineer | Frontend & Design |
-| [@github](https://github.com) | [@github](https://github.com) | [@github](https://github.com) |
+| Project Lead & Backend | Frontend and Design | Design Head | AI library expert | Designer |
+
 
 </div>
 
@@ -788,10 +785,10 @@ Ed-Vantage uniquely combines **computer vision**, **audio processing**, and **sp
 | **Completeness** | Fully functional with all features working | 10/10 |
 
 ### 🎥 Demo Video
-[3-minute demo video link](https://youtube.com/demo)
+[5-minute demo video link](https://share.descript.com/view/cexrMJwDgRk)
 
 ### 🌐 Live Demo
-[Deployed application link](https://ed-vantage-demo.herokuapp.com) *(if deployed)*
+[Deployed application link](http://127.0.0.1:5000/) 
 
 ---
 
@@ -799,7 +796,6 @@ Ed-Vantage uniquely combines **computer vision**, **audio processing**, and **sp
 
 ### Academic Research
 1. Ekman, P. (1992). *An argument for basic emotions*. Cognition & emotion.
-2. Picard, R. W. (1997). *Affective computing*. MIT press.
 3. Mehrabian, A. (1971). *Silent messages*. Wadsworth Publishing Company.
 
 ### Technologies Used
@@ -814,57 +810,21 @@ Ed-Vantage uniquely combines **computer vision**, **audio processing**, and **sp
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 Ed-Vantage Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-```
-
----
-
 ## 🙏 Acknowledgments
 
 Special thanks to:
-- **[Hackathon Name]** organizers for the opportunity
+- **[iHUB Hackathon organizers]** organizers for the opportunity
 - **Groq** for providing free, fast AI inference
 - **DeepFace** team for open-source emotion recognition
 - **Open-source community** for amazing tools
 - **Our mentors** for guidance and support
-- **Beta testers** (teachers who tried Ed-Vantage)
 
 ---
 
 ## 📞 Contact & Support
 
 ### Get In Touch
-- 📧 **Email**: edvantage.team@gmail.com
-- 🐦 **Twitter**: [@EdVantageAI](https://twitter.com)
-- 💼 **LinkedIn**: [Ed-Vantage Project](https://linkedin.com)
-- 🌐 **Website**: [www.edvantage.ai](https://edvantage.ai)
-
-### Contributing
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-### Reporting Issues
-Found a bug? [Open an issue](https://github.com/yourusername/ed-vantage/issues) on GitHub.
+- 📧 **Email**: b25352@students.iitmandi.ac.in
 
 ---
 
