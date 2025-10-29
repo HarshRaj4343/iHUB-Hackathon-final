@@ -15,10 +15,8 @@ except ImportError:
     print("⚠️ Groq not installed. Run: pip install groq")
 
 app = Flask(__name__)
-# Removed: secret key
-# Removed: USERS dictionary
 
-GROQ_API_KEY = "gsk__key here"
+GROQ_API_KEY = "gsk__key here"  #ADD KEY HERE ONLY!
 
 
 groq_client = None
@@ -207,13 +205,10 @@ def gpt_search():
                 'answer': f'❌ Error: {error_msg}\n\nPlease try again.'
             })
 
-# Removed: @app.route('/login', ...)
-# Removed: @app.route('/logout')
 
 
 @app.route('/')
 def index():
-    # Modified: Removed login check
     return render_template('dashboard.html')
 
 @app.route('/data')
