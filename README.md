@@ -162,15 +162,6 @@ Classroom Silence:
 ### 📹 Video Walkthrough
 Watch our 3-minute demo: [Link](https://share.descript.com/view/cexrMJwDgRk) *(video demo included)*
 
-### 📸 Screenshots
-
-<div align="center">
-
-| Main Dashboard | Teacher Analysis | AI Assistant |
-|----------------|------------------|--------------|
-| ![Dashboard](https://postimg.cc/gwhSsZqW) | ![Analysis](https://postimg.cc/dhrrSmXV) | ![AI](https://postimg.cc/DSkbs4ZF) |
-
-</div>
 
 ---
 
