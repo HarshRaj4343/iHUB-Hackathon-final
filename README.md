@@ -839,8 +839,8 @@ If Ed-Vantage impressed you, please:
 
 ---
 
-**Made for [Hackathon Name] 2025** | Version 1.0.0 | Last Updated: October 29, 2025
+**Made for Multimodal AI Hackathon 2025** | Version 1.0.0 | Last Updated: October 29, 2025
 
-![Thank You](https://via.placeholder.com/800x100/667eea/ffffff?text=Thank+You+for+Checking+Out+Ed-Vantage!)
+![Thank You]
 
 </div>
