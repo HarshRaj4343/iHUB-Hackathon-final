@@ -19,11 +19,11 @@ def check_classroom_audio(duration=5):
     print(f"Volume level: {volume}")
     
  
-    if volume < 0.01:  # Very quiet
+    if volume < 0.002:  # Extremely sensitive to silence
         return "silent", "⚠️ Dead silence - students may be confused"
-    elif volume < 0.05:  # Normal quiet
+    elif volume < 0.01:  # Extremely sensitive to quiet noise
         return "quiet", "✅ Normal classroom sound"
-    else:  # Active discussion
+    else:  # Considers even very low volumes as active
         return "active", "💬 Active discussion happening"
 
 if __name__ == "__main__":
