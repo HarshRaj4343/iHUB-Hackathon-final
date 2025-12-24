@@ -293,7 +293,7 @@ You should see:
 ============================================================
 🚀 Starting Ed-Vantage Dashboard
 ============================================================
-📊 Dashboard: http://localhost:5000
+📊 Dashboard: .
 ⚠️  Grant camera/mic permissions if prompted
 🎤 Click 'Analyze My Teaching' button to analyze your speech
 🤖 AI Assistant: Powered by Groq (FREE & FAST!) ✅
@@ -304,8 +304,7 @@ Press Ctrl+C to stop
 
 #### Step 5: Access the Dashboard
 1. Open your browser
-2. Navigate to: **http://localhost:5000**
-3. **Grant permissions** when prompted:
+2. to**Grant permissions** when prompted:
    - ✅ Allow camera access (for emotion detection)
    - ✅ Allow microphone access (for audio & speech analysis)
 
