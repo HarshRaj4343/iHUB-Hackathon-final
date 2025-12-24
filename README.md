@@ -152,12 +152,7 @@ Classroom Silence:
 🔇 "Dead silence - students may be confused. Check understanding."
 ```
 
----
 
-## 🎬 Live Demo
-
-### 🌐 Try It Live
-**Dashboard URL**: [http://127.0.0.1:5000](http://127.0.0.1:5000) *(if deployed)*
 
 ### 📹 Video Walkthrough (Updated one: Do not refer to the link given in the ppt)
 Watch our 6-minute explanatory video: [Link](https://drive.google.com/file/d/15kA2wH04LIAOuZFa_Gms7_bRtr8MzKgS/view?usp=sharing) 
