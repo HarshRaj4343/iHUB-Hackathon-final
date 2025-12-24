@@ -454,9 +454,8 @@ if __name__ == '__main__':
 
 #### Starting a Session
 1. Launch application: `python app.py`
-2. Open browser: `http://localhost:5000`
-3. Grant camera and microphone permissions
-4. Begin teaching - monitoring starts automatically!
+2. Grant camera and microphone permissions
+3. Begin teaching - monitoring starts automatically!
 
 #### During Class
 - **Monitor the engagement score** in real-time
